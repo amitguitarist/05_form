@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+
+<body>
+    <form action="process.php" method="POST">
+
+        <fieldset>
+            <legend> <b>Personal Information </b> </legend>
+
+            <p>Username <br />
+                <input type="text" placeholder="Enter Username" name="username" required>
+            </p>
+            <p>Password<br />
+                <input type="password" placeholder="Enter Password" name="password">
+            </p>
+            <p>Confirm Password<br />
+                <input type="password" placeholder="Enter Password" name="confirm-password">
+            </p>
+
+            <p>Email address:</br>
+                <input type="email" name="email-address" placeholder="Enter email address" />
+            </p>
+
+            <p>Birthdate<br />
+                <input type="date" name="bday" />
+            </p>
+
+        </fieldset>
+
+        <p>What did you think of Japan? <br />
+            <textarea name="comments" cols="20" rows="4" maxlength="100">Enter your comments...</textarea>
+        </p>
+
+        <p>Please select your favourite genre of music:<br />
+            <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+            <input type="radio" name="genre" value="pop" /> Pop
+            <input type="radio" name="genre" value="jazz" /> Jazz
+        </p>
+
+        <p>Please choose your Hobbies (You can select more than one) <br />
+
+            <input type="checkbox" name="hobby1" value="music"> Music <br>
+            <input type="checkbox" name="hobby2" value="sports"> Sports<br>
+            <input type="checkbox" name="hobby3" value="programming" checked> Programming <br>
+
+        <p>Which semester are your currently enrolled in?<br />
+            <select name="semester">
+                <option value="fall2019">Fall 2019</option>
+                <option value="spring2020">Spring 2020</option>
+                <option value="fall2020">Fall 2020</option>
+            </select>
+        </p>
+
+        <p>Which courses are you registered in this semester?<br />
+            <select name="course-registered" multiple="multiple">
+                <option value="web-programming" selected="selected">Web Programming</option>
+                <option value="database">Database</option>
+                <option value="computer-organization-theory">Computer Organization Theory</option>
+            </select>
+        </p>
+
+        <p>Upload your resume:<br />
+            <input type="file" name="resume" /><br />
+        </p>
+
+        <p>
+            <input type="submit" value="Register" />
+            <input type="reset" />
+        </p>
+
+    </form>
+
+
+</body>
+
+</html>
